@@ -1,0 +1,122 @@
+
+<div class="header--sidebar"></div>
+<header class="header" style="background-color: #ffffff">
+
+  <div class="header__top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
+          <p>
+            QT GROUP
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+          <div class="header__actions">
+            <a  *ngIf="!login" routerLink="/login">Đăng nhập <i class="fas fa-sign-in-alt"></i></a>
+            <a href="#"> Ứng dụng <i class="fas fa-long-arrow-alt-down"></i></a>
+            <a href="#">Thông báo <i class="far fa-bell"></i></a>
+            <div class="btn-group ps-dropdown" style="z-index: 9999999999">
+              <a
+                class="dropdown-toggle"
+                *ngIf="login"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Tài khoản <i class="fas fa-user-cog"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" ><img src="../assets/images/images/flag/usa.svg" alt="" *ngIf="role == 1">
+                    Quản lý sản phẩm</a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/images/flag/singapore.svg"alt="" *ngIf="role == 1">Điểm</a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/images/flag/japan.svg" alt="" /> Thông tin</a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/images/flag/japan.svg" alt="" /> Đăng xuất</a>
+                </li>
+
+              </ul>
+
+            </div>
+            <div class="btn-group ps-dropdown" style="z-index: 9999999999">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Ngôn ngữ <i class="fas fa-globe-americas"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
+                <li><a href="#">Chinese</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navigation navbar-menu">
+    <div class="container-fluid">
+      <div class="navigation__column left">
+        <div class="header__logo">
+          <a class="ps-logo" href="index.html"
+            ><img src="../../../assets/images/images/logoo.png" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="navigation__column center">
+        <ul class="main-menu menu">
+          <li class="menu-item menu-item-has-children dropdown">
+            <a href="index.html">Trang chủ</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="index.html">1</a></li>
+              <li class="menu-item"><a href="#">2</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children has-mega-menu">
+            <a href="#">Danh mục</a>
+
+          </li>
+
+          <li class="menu-item"><a routerLink="/product">TOP CV</a></li>
+          <li class="menu-item menu-item-has-children dropdown">
+            <a href="#">News</a>
+            <ul class="sub-menu">
+              <li class="menu-item menu-item-has-children dropdown">
+                <a href="blog-grid.html">Blog-grid</a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="blog-grid.html">Blog Grid 1</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="blog-grid-2.html">Blog Grid 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children dropdown">
+            <a href="#">Contact</a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="contact-us.html">Contact Us #1</a>
+              </li>
+              <li class="menu-item">
+                <a href="contact-us.html">Contact Us #2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
