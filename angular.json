@@ -34,28 +34,19 @@
               // "node_modules/font-awesome/css/font-awesome.css",
               // "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
-
               "src/assets/css/animation.css",
               "src/assets/css/grid.css",
               "src/assets/css/reponsive.css",
-
               "src/assets/vendor/animate/animate.css",
               "src/assets/vendor/css-hamburgers/hamburgers.min.css",
               "src/assets/vendor/select2/select2.min.css",
-             "src/assets/fonts/font-awesome-4.7.0/css/icon-font.min.css"
+              "src/assets/fonts/font-awesome-4.7.0/css/icon-font.min.css",
+              "src/assets/css/calendarview.css",
+              "src/assets/css/form.css"
             ],
             "scripts": [
-              // "node_modules/jquery/dist/jquery.min.js",
-              // "node_modules/bootstrap/dist/js/bootstrap.js",
-              // "node_modules/bootstrap/dist/js/bootstrap.min.js",
-
-              "src/assets/js/main.js",
-
-              "src/assets/vendor/bootstrap/js/popper.js",
-              "src/assets/vendor/select2/select2.min.js",
-              "src/assets/vendor/select2/checklogin.js"
-          ]
-        },
+            ]
+          },
           "configurations": {
             "production": {
               "fileReplacements": [

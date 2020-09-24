@@ -1,8 +1,9 @@
-import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
+
 import { LoginComponentComponent } from './Components/login-component/login-component.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {ApplyjobComponent} from './Components/applyjob-component/applyjob.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,8 @@ const routes: Routes = [
     component: HomePageComponent,
   },
   {
-    path: 'proDetaill',
-    component: ProductDetailComponent,
+    path: 'applyJob',
+    component: ApplyjobComponent,
   },
   {
     path: 'login',
