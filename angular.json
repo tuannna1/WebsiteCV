@@ -42,7 +42,11 @@
               "src/assets/vendor/select2/select2.min.css",
               "src/assets/fonts/font-awesome-4.7.0/css/icon-font.min.css",
               "src/assets/css/calendarview.css",
-              "src/assets/css/form.css"
+              "src/assets/css/form.css",
+              "src/assets/css/style1.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/fontawesome-all.css",
+              "src/assets/css/zoomslider.css"
             ],
             "scripts": [
 
