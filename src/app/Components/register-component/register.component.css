@@ -32,13 +32,8 @@ h1{
 
   font-size: 15px;
 }
-.form-check-input{
-
-  margin-left: 29%;
-
-}
 .form-check-label{
-  margin-left: 34%;
+  margin-left: 20px;
 }
 button{
   width: 100%;
