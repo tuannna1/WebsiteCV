@@ -10,6 +10,7 @@ import { TopcvComponentComponent } from './Components/topcv-component/topcv-comp
 
 
 import {RegisterComponent} from './Components/register-component/register.component';
+import { CreateCVComponentComponent } from './create-cv-component/create-cv-component.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'createCV',
+    component: CreateCVComponentComponent,
   },
 ];
 
