@@ -10,11 +10,9 @@ import { TopcvComponentComponent } from './Components/topcv-component/topcv-comp
 
 
 import {RegisterComponent} from './Components/register-component/register.component';
-<<<<<<< HEAD
 import {ContactComponent} from './Components/contact-component/contact.component';
-=======
 
->>>>>>> f505c0c88c420bd9367262c81692a59377a84f0d
+
 const routes: Routes = [
   {
     path: '',
