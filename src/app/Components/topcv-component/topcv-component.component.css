@@ -1,0 +1,88 @@
+.box-text {
+  padding: 20px;
+  border: 1px dashed #ccc;
+  background-color: #eaeaea;
+  line-height: 1.6em;
+  margin-bottom: 30px;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  font-family: Arial,helvetica neue,Helvetica,sans-serif;
+  font-weight: 300;
+  background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.box-text {
+  padding: 20px;
+  border: 1px dashed #ccc;
+  background-color: #eaeaea;
+  line-height: 1.6em;
+  margin-bottom: 30px;
+}
+.box-text h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.box-text ul {
+  margin-left: 20px;
+}
+.box-text li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

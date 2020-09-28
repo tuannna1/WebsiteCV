@@ -5,6 +5,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {ApplyjobComponent} from './Components/applyjob-component/applyjob.component';
 import {AboutComponent} from './Components/about-component/applyjob.component';
+import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+    path: 'topcv',
+    component: TopcvComponentComponent,
   },
 ];
 
