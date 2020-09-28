@@ -5,8 +5,16 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {ApplyjobComponent} from './Components/applyjob-component/applyjob.component';
 import {AboutComponent} from './Components/about-component/applyjob.component';
+
+import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
+
+
 import {RegisterComponent} from './Components/register-component/register.component';
+<<<<<<< HEAD
 import {ContactComponent} from './Components/contact-component/contact.component';
+=======
+
+>>>>>>> f505c0c88c420bd9367262c81692a59377a84f0d
 const routes: Routes = [
   {
     path: '',
@@ -23,6 +31,11 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+
+    path: 'topcv',
+    component: TopcvComponentComponent,
   },
   {
     path: 'register',

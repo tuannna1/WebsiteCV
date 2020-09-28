@@ -16,7 +16,11 @@ import { AdvertisementComponent } from './Layouts/advertisement/advertisement.co
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {ApplyjobComponent} from './Components/applyjob-component/applyjob.component';
 import {AboutComponent} from './Components/about-component/applyjob.component';
+
+import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
+
 import {RegisterComponent} from './Components/register-component/register.component';
+
 //import { library } from '@fortawesome/fontawesome-svg-core';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,8 +38,8 @@ import {RegisterComponent} from './Components/register-component/register.compon
     FilterComponent,
     AdvertisementComponent,
     ApplyjobComponent,
-    AboutComponent
-
+    AboutComponent,
+    TopcvComponentComponent
   ],
 
   imports: [
