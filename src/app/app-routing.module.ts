@@ -1,16 +1,17 @@
-
 import { LoginComponentComponent } from './Components/login-component/login-component.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ApplyjobComponent} from './Components/applyjob-component/applyjob.component';
-import {AboutComponent} from './Components/about-component/applyjob.component';
+import { ApplyjobComponent } from './Components/applyjob-component/applyjob.component';
+import { AboutComponent } from './Components/about-component/applyjob.component';
 
 import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
 
+import { RegisterComponent } from './Components/register-component/register.component';
 
-import {RegisterComponent} from './Components/register-component/register.component';
 import { CreateCVComponentComponent } from './create-cv-component/create-cv-component.component';
+
+import { ContactComponent } from './Components/contact-component/contact.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,6 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
-
     path: 'topcv',
     component: TopcvComponentComponent,
   },
@@ -41,6 +41,10 @@ const routes: Routes = [
   {
     path: 'createCV',
     component: CreateCVComponentComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
 ];
 
