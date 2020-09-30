@@ -11,7 +11,9 @@ import { TopcvComponentComponent } from './Components/topcv-component/topcv-comp
 
 import {RegisterComponent} from './Components/register-component/register.component';
 import {ContactComponent} from './Components/contact-component/contact.component';
+import { BlogComponent } from './Components/blog/blog.component';
 
+import { BlogSingleComponent} from './Components/blog-single/blog-single.component'
 
 const routes: Routes = [
   {
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+  },
+  {
+    path: 'blog-single',
+    component: BlogSingleComponent,
   },
 ];
 

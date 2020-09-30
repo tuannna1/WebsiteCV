@@ -21,6 +21,11 @@ import { TopcvComponentComponent } from './Components/topcv-component/topcv-comp
 
 import {RegisterComponent} from './Components/register-component/register.component';
 
+// -----------thanh hau import blog ----------------------
+import { BlogComponent } from './Components/blog/blog.component';
+import { BlogSingleComponent } from './Components/blog-single/blog-single.component';
+// -----------thanh hau import blog ----------------------
+
 //import { library } from '@fortawesome/fontawesome-svg-core';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
@@ -39,7 +44,9 @@ import {RegisterComponent} from './Components/register-component/register.compon
     AdvertisementComponent,
     ApplyjobComponent,
     AboutComponent,
-    TopcvComponentComponent
+    TopcvComponentComponent,
+    BlogComponent,
+    BlogSingleComponent
   ],
 
   imports: [

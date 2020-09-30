@@ -1,0 +1,55 @@
+header.innner-page {
+	padding: 25px 0;
+	text-align: left;
+	overflow-x: hidden;
+}
+header.innner-page h1 {
+	margin: 0px;
+	color: #1a0202;
+}
+header.innner-page h1 .fa {
+	color: #0A84CB;
+}
+@media (max-width:766px){
+	header.innner-page h1 {
+    margin: 0px;
+    color: #eeeeee;
+    font-size:30px;
+}
+}
+.konnect-list{
+    margin-bottom: 15px;
+    }
+hr {
+        border-color: #0A84CB;
+        border-width: 3px;
+        max-width: 50px;
+    }
+hr.light {
+        border-color: white;
+    }
+@media (max-width:767px){	
+        .konnect-facts, .konnect-awards{
+                padding:25px 0 0 0;
+        }
+        }
+        .section-heading {
+            font-size: 25px;
+        }
+        .konnect-list li {
+            list-style: none;
+            font-size: 17px;
+            line-height: 31px;
+            font-weight: 300;
+            padding-left: 3px;
+        }
+        .konnect-list li:before {
+            content: "\f1db";
+            font-family: FontAwesome;
+            font-style: normal;
+            text-decoration: inherit;
+            color: #7FAAFF;
+            margin-right: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
