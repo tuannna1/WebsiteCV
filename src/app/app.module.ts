@@ -24,6 +24,8 @@ import { CreateCVComponentComponent } from './Components/create-cv-component/cre
 // -----------thanh hau import blog ----------------------
 import { BlogComponent } from './Components/blog/blog.component';
 import { BlogSingleComponent } from './Components/blog-single/blog-single.component';
+import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
+
 // -----------thanh hau import blog ----------------------
 
 //import { library } from '@fortawesome/fontawesome-svg-core';
@@ -46,8 +48,8 @@ import { BlogSingleComponent } from './Components/blog-single/blog-single.compon
     AboutComponent,
     TopcvComponentComponent,
     BlogComponent,
-    BlogSingleComponent
-
+    BlogSingleComponent,
+    JoblistComponentComponent,
   ],
 
   imports: [

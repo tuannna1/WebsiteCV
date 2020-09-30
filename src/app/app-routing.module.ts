@@ -9,17 +9,14 @@ import { TopcvComponentComponent } from './Components/topcv-component/topcv-comp
 
 import { RegisterComponent } from './Components/register-component/register.component';
 
-<<<<<<< HEAD
-import {RegisterComponent} from './Components/register-component/register.component';
-import {ContactComponent} from './Components/contact-component/contact.component';
 import { BlogComponent } from './Components/blog/blog.component';
 
-import { BlogSingleComponent} from './Components/blog-single/blog-single.component'
-=======
+import { BlogSingleComponent } from './Components/blog-single/blog-single.component';
+
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
 import { ContactComponent } from './Components/contact-component/contact.component';
->>>>>>> 236e0b3bbf13c1c9a8181c65f554af9a81fdf397
+import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
 
 const routes: Routes = [
   {
@@ -61,6 +58,10 @@ const routes: Routes = [
   {
     path: 'blog-single',
     component: BlogSingleComponent,
+  },
+  {
+    path: 'joblist',
+    component: JoblistComponentComponent,
   },
 ];
 
