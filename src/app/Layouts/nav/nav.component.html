@@ -1,52 +1,28 @@
-
 <div class="header--sidebar"></div>
 <header class="header" style="background-color: #ffffff">
-
   <div class="header__top">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
-
-
-        <img src="../../../assets/images/images/QT-HR.png" alt="logo" style="max-width: 59px;"/>
-
-
+          <img src="../../../assets/images/images/QT-HR.png" alt="logo" />
         </div>
         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
           <div class="header__actions">
-            <a  *ngIf="!login" routerLink="/login"> Đăng nhập <i class="fas fa-sign-in-alt"></i></a>
+            <a *ngIf="!login" routerLink="/login">
+              Đăng nhập <i class="fas fa-sign-in-alt"></i
+            ></a>
+            <a *ngIf="!login" routerLink="/register"
+              >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
+            ></a>
 
+            <a routerLink="/contact">
+              Liên hệ <i class="glyphicon glyphicon-phone-alt"></i
+            ></a>
+            <a href="#"> Đăng Xuất<i class="fas fa-long-arrow-alt-down"></i></a>
 
-            <a  *ngIf="!login" routerLink="/register">Đăng ký <i class="glyphicon glyphicon-info-sign"></i></a>
-            <a  routerLink="/contact"> Liên hệ <i class="glyphicon glyphicon-phone-alt"></i></a>
             <a href="#"> Ứng dụng <i class="fas fa-long-arrow-alt-down"></i></a>
             <a href="#">Thông báo <i class="far fa-bell"></i></a>
-            <div class="btn-group ps-dropdown" style="z-index: 9999999999">
-              <a
-                class="dropdown-toggle"
-                *ngIf="login"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Tài khoản <i class="fas fa-user-cog"></i></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#" ><img src="../assets/images/images/flag/usa.svg" alt="" *ngIf="role == 1">
-                    Quản lý sảndoing phẩm</a>
-                </li>
-                <li>
-                  <a href="#"><img src="../assets/images/images/flag/singapore.svg"alt="" *ngIf="role == 1">Điểm</a>
-                </li>
-                <li>
-                  <a href="#"><img src="../assets/images/images/flag/japan.svg" alt="" /> Thông tin</a>
-                </li>
-                <li>
-                  <a href="#"><img src="../assets/images/images/flag/japan.svg" alt="" /> Đăng xuất</a>
-                </li>
 
-              </ul>
-
-            </div>
             <div class="btn-group ps-dropdown" style="z-index: 9999999999">
               <a
                 class="dropdown-toggle"
@@ -54,56 +30,42 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Ngôn ngữ <i class="fas fa-globe-americas"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">English</a></li>
-                <li><a href="#">Japanese</a></li>
-                <li><a href="#">Chinese</a></li>
-              </ul>
+                >Ngôn ngữ <i class="fas fa-globe-americas"></i>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Japanese</a></li>
+                  <li><a href="#">Chinese</a></li>
+                </ul>
+              </a>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-  <nav class="navigation navbar-menu" style="margin-top: -16px;">
+  <nav class="navigation navbar-menu" style="margin-top: -16px">
     <div class="container">
-      <div class="navigation__column center"  style="margin-left: 180px;">
+      <div class="navigation__column center" style="margin-left: 245px">
         <ul class="main-menu menu container">
           <li class="menu-item menu-item-has-children dropdown">
             <a href="index.html">Trang chủ</a>
           </li>
 
           <li class="menu-item menu-item-has-children dropdown">
-            <a routerLink="/about">About</a>
-
+            <a routerLink="/about">Giới thiệu</a>
           </li>
 
           <li class="menu-item menu-item-has-children has-mega-menu">
             <a href="#">Danh mục</a>
-
           </li>
 
           <li class="menu-item">
-            <a routerLink="/topcv">TOP CV</a>
+            <a routerLink="/topcv">Tạo CV</a>
           </li>
-
 
           <li class="menu-item menu-item-has-children dropdown">
             <a href="#">News</a>
             <ul class="sub-menu">
-              <!-- <li class="menu-item menu-item-has-children dropdown">
-                <a href="blog-grid.html" style="color: black;">Blog-grid</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="blog-grid.html" style="color: black;">Blog Grid 1</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="blog-grid-2.html" style="color: black;">Blog Grid 2</a>
-                  </li>
-                </ul>
-              </li> -->
               <li class="menu-item"><a routerLink="/blog" style="color: black;">Blog List</a></li>
               <li class="menu-item"><a routerLink="/blog-single" style="color: black;">Blog Single</a></li>
             </ul>
@@ -112,41 +74,30 @@
             <a href="#">Job</a>
             <ul class="sub-menu">
               <li class="menu-item">
-                <a routerLink="/applyJob" style="color: black;">Application for job </a>
-              </li>
-              <li class="menu-item">
-                <a routerLink=""></a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item menu-item-has-children dropdown">
-            <a href="#">Contact</a>
-            <ul class="sub-menu">
-              <li class="menu-item">
-                <a routerLink="/applyJob" style="color: black;">Contact Us #1</a>
-              </li>
-              <li class="menu-item">
-                <a href="contact-us.html" style="color: black;">Contact Us #2</a>
+                <a routerLink="/applyJob" style="color: black"
+                  >Application for job
+                </a>
               </li>
             </ul>
           </li>
-
         </ul>
       </div>
 
-
       <div id="hero">
         <div class="container">
-        <h1>Đăng tin tuyển dụng &amp; tìm hồ sơ ứng viên hiệu quả trên QT-HR</h1>
+          <h1 style="font-size: 280%; font-weight: bold">
+            TÌM VIỆC KHÓ - CÓ QT-HR
+          </h1>
+          <h4 style="margin-bottom: 50px">
+            SỞ HỮU NGAY CV XỊN CÙNG VIỆC LÀM MƠ ƯỚC
+          </h4>
 
-        <div class="action">
-        <a href="#" class="btn btn-primary">Đăng Tin Ngay</a>
-        <a href="#" class="btn btn-success">Tìm Ứng Viên</a>
+          <div class="action">
+            <a href="#" class="btn btn-primary">TẠO CV ONLINE</a>
+            <a href="#" class="btn btn-success">TẢI CV LÊN</a>
+          </div>
         </div>
-        </div>
-        </div>
-
-
+      </div>
     </div>
   </nav>
 </header>
