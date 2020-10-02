@@ -25,7 +25,6 @@ import { CreateCVComponentComponent } from './Components/create-cv-component/cre
 import { BlogComponent } from './Components/blog/blog.component';
 import { BlogSingleComponent } from './Components/blog-single/blog-single.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
-
 // -----------thanh hau import blog ----------------------
 
 //import { library } from '@fortawesome/fontawesome-svg-core';
