@@ -58,9 +58,11 @@ h6 {
 p {
     margin: 0;
     font-size: 0.95em;
-    color: #8c9398;
+    /* -------------------------------- */
+    /* -----------------------------------hau thay đổi màu chữ thẻ p------------------- */
+    color: #111111;
     line-height: 2em;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 ul {

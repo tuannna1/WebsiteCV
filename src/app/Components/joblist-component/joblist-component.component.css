@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+@media screen and (min-width:2px) {
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -15px
+  }
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -15px
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px
+  }
+  .carousel-indicators {
+    bottom: 20px
+  }
+}
+
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.pull-right {
+  float: right!important
+}
+
+.pull-left {
+  float: left!important
+}
+
+.hide {
+  display: none!important
+}
+
+.show {
+  display: block!important
+}
+
+.invisible {
+  visibility: hidden
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important
+}
+
+.affix {
+  position: fixed;
+  transform: translate3d(0, 0, 0)
+}
+
+@-ms-viewport {
+  width: device-width
+}
+
+.visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-print, .visible-print-block, .visible-print-inline, .visible-print-inline-block, .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+  display: none!important
+}
+
+@media (max-width:1px) {
+  .visible-xs {
+    display: block!important
+  }
+  table.visible-xs {
+    display: table
+  }
+  tr.visible-xs {
+    display: table-row!important
+  }
+  td.visible-xs, th.visible-xs {
+    display: table-cell!important
+  }
+}
+
+@media (max-width:1px) {
+  .visible-xs-block {
+    display: block!important
+  }
+}
+
+@media (max-width:1px) {
+  .visible-xs-inline {
+    display: inline!important
+  }
+}
+
+@media (max-width:1px) {
+  .visible-xs-inline-block {
+    display: inline-block!important
+  }
+}
+
+@media (min-width:2px) and (max-width:991px) {
+  .visible-sm {
+    display: block!important
+  }
+  table.visible-sm {
+    display: table
+  }
+  tr.visible-sm {
+    display: table-row!important
+  }
+  td.visible-sm, th.visible-sm {
+    display: table-cell!important
+  }
+}
+
+@media (min-width:2px) and (max-width:991px) {
+  .visible-sm-block {
+    display: block!important
+  }
+}
+
+@media (min-width:2px) and (max-width:991px) {
+  .visible-sm-inline {
+    display: inline!important
+  }
+}
+
+@media (min-width:2px) and (max-width:991px) {
+  .visible-sm-inline-block {
+    display: inline-block!important
+  }
+}
+
+@media (min-width:992px) and (max-width:1599px) {
+  .visible-md {
+    display: block!important
+  }
+  table.visible-md {
+    display: table
+  }
+  tr.visible-md {
+    display: table-row!important
+  }
+  td.visible-md, th.visible-md {
+    display: table-cell!important
+  }
+}
+
+@media (min-width:992px) and (max-width:1599px) {
+  .visible-md-block {
+    display: block!important
+  }
+}
+
+@media (min-width:992px) and (max-width:1599px) {
+  .visible-md-inline {
+    display: inline!important
+  }
+}
+
+@media (min-width:992px) and (max-width:1599px) {
+  .visible-md-inline-block {
+    display: inline-block!important
+  }
+}
+
+@media (min-width:1600px) {
+  .visible-lg {
+    display: block!important
+  }
+  table.visible-lg {
+    display: table
+  }
+  tr.visible-lg {
+    display: table-row!important
+  }
+  td.visible-lg, th.visible-lg {
+    display: table-cell!important
+  }
+}
+
+@media (min-width:1600px) {
+  .visible-lg-block {
+    display: block!important
+  }
+}
+
+@media (min-width:1600px) {
+  .visible-lg-inline {
+    display: inline!important
+  }
+}
+
+@media (min-width:1600px) {
+  .visible-lg-inline-block {
+    display: inline-block!important
+  }
+}
+
+@media (max-width:1px) {
+  .hidden-xs {
+    display: none!important
+  }
+}
+
+@media (min-width:2px) and (max-width:991px) {
+  .hidden-sm {
+    display: none!important
+  }
+}
+
+@media (min-width:992px) and (max-width:1599px) {
+  .hidden-md {
+    display: none!important
+  }
+}
+
+@media (min-width:1600px) {
+  .hidden-lg {
+    display: none!important
+  }
+}
+
+@media print {
+  .visible-print {
+    display: block!important
+  }
+  table.visible-print {
+    display: table
+  }
+  tr.visible-print {
+    display: table-row!important
+  }
+  td.visible-print, th.visible-print {
+    display: table-cell!important
+  }
+}
+
+@media print {
+  .visible-print-block {
+    display: block!important
+  }
+}
+
+@media print {
+  .visible-print-inline {
+    display: inline!important
+  }
+}
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block!important
+  }
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(/bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0);
+  src: url(/bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(/bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(/bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+.fa, .grid-icon_message, .grid-icon_my_resumes {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -15%
+}
+
+.fa-2x {
+  font-size: 2em
+}
+
+@media (max-width:1px) {
+  #job-alert-form .pseudo-table>.pseudo-table-cell:first-child, #resume-alert-form .pseudo-table>.pseudo-table-cell:first-child {
+    margin-bottom: 6px
+  }
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.text-success, a.text-success:focus, a.text-success:hover {
+  color: #449d44
+}
+
+.text-danger, a.text-danger:focus, a.text-danger:hover {
+  color: #d9534f
+}
+
+.text-accent, a.text-accent:focus, a.text-accent:hover {
+  color: #f37911
+}
+
+.bg-muted {
+  background-color: #eee
+}
+
+.page-header {
+  margin: 20px 0;
+  border-bottom: 0
+}
+
+.page-header h1 {
+  font-size: 20px
+}
+
+.page-header.has-space {
+  margin-bottom: 22px!important
+}
+
+.page-header.has-space h1 {
+  margin-bottom: 0
+}
+
+.page-header.has-space-lg {
+  margin-bottom: 29px!important
+}
+
+.page-header.has-space-lg h1 {
+  margin-bottom: 0
+}
+
+.page-header.has-border-bottom {
+  margin-top: 40px;
+  border-bottom: 1px solid #eee
+}
+
+.page-header .fs-lg {
+  font-size: 30px
+}
+
+.page-header .instruction-edit .paragraph, .page-header .instruction-edit p {
+  margin-top: 3px;
+  margin-bottom: 0
+}
+
+.alert+.page-header, .container>.page-header {
+  padding-bottom: 5px
+}
+
+.alert+.page-header, .alert+.page-header h1, .container>.page-header, .container>.page-header h1 {
+  margin-top: 24px;
+  margin-bottom: 0
+}
+
+.list-sm {
+  font-size: 12px
+}
+
+.tooltip-inner {
+  white-space: nowrap
+}
+
+.share-buttons {
+  margin-left: 0
+}
+
+@media (min-width:2px) {
+  .share-buttons {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    z-index: 900
+  }
+}
+
+.share-buttons>li {
+  padding: 0;
+  vertical-align: top
+}
+
+@media (min-width:2px) {
+  .share-buttons>li {
+    display: block
+  }
+}
+
+@media (max-width:1px) {
+  .share-buttons>li {
+    width: 20%;
+    height: 32px
+  }
+}
+
+.share-buttons>li>a, .share-buttons>li>span {
+  display: block
+}
+
+@media (min-width:2px) {
+  .share-buttons>li>a, .share-buttons>li>span {
+    width: 42px;
+    float: right;
+    padding: 5px
+  }
+}
+
+.share-buttons>li>a {
+  transition: all .15s ease
+}
+
+@media (min-width:2px) {
+  .share-buttons>li>a:hover {
+    width: 55px;
+    padding-right: 20px
+  }
+}
+
+@media (max-width:1px) {
+  .share-buttons.col-4>li {
+    width: 25%
+  }
+}
+
+.share-buttons .fa, .share-buttons .grid-icon_message, .share-buttons .grid-icon_my_resumes {
+  vertical-align: top;
+  color: #fff;
+  display: inline-block;
+  height: 32px;
+  line-height: 33px
+}
+
+.share-buttons img {
+  vertical-align: top;
+  pointer-events: none
+}
+
+.share-buttons .facebook {
+  background-color: #3b5998
+}
+
+.share-buttons .line {
+  background-color: #00c300
+}
+
+.share-buttons .line a {
+  display: block
+}
+
+.share-buttons .line img {
+  height: 32px;
+  width: 32px
+}
+
+.share-buttons .linkedin {
+  background-color: #0077B5
+}
+
+.share-buttons .envelope {
+  background-color: #999
+}
+
+@media (max-width:1px) {
+  .share-buttons .envelope .fa-envelope {
+    margin-left: 2px
+  }
+}
+
+.share-buttons .twitter {
+  background-color: #55acee
+}
+
+.share-buttons .zalo {
+  transition: all .15s ease;
+  background-color: #04a5fa
+}
+
+@media (min-width:2px) {
+  .share-buttons .zalo {
+    width: 42px;
+    height: 42px;
+    float: right;
+    padding: 2px 0 0
+  }
+}
+
+@media (max-width:1px) {
+  .share-buttons .zalo>div {
+    margin-top: 1px
+  }
+}
+
+@media (min-width:2px) {
+  .share-buttons .zalo:hover {
+    width: 55px;
+    padding-right: 25px
+  }
+}

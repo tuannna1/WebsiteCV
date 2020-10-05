@@ -1,16 +1,17 @@
-<div class="header--sidebar"></div>
 <header class="header" style="background-color: #ffffff">
   <div class="header__top">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12">
-          <img
-            src="../../../assets/images/images/QT-HR.png"
-            alt="logo"
-            style="height: 58px"
-          />
+        <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12">
+          <a href="">
+            <img
+              src="../../../assets/images/images/QT-HR.png"
+              alt="logo"
+              style="height: 100px"
+            />
+          </a>
         </div>
-        <div class="col-lg-7 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-7" style="margin-top: 25px">
           <div class="header__actions">
             <a *ngIf="!login" routerLink="/login">
               Đăng nhập <i class="fas fa-sign-in-alt"></i
@@ -22,9 +23,6 @@
             <a routerLink="/contact">
               Liên hệ <i class="glyphicon glyphicon-phone-alt"></i
             ></a>
-            <a href="#"> Đăng Xuất<i class="fas fa-long-arrow-alt-down"></i></a>
-
-            <a href="#"> Ứng dụng <i class="fas fa-long-arrow-alt-down"></i></a>
             <a href="#">Thông báo <i class="far fa-bell"></i></a>
 
             <div class="btn-group ps-dropdown" style="z-index: 9999999999">
@@ -32,8 +30,8 @@
                 class="dropdown-toggle"
                 href="#"
                 data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                aria-haspopup="false"
+                aria-expanded="true"
                 >Ngôn ngữ <i class="fas fa-globe-americas"></i>
                 <ul class="dropdown-menu">
                   <li><a href="#">English</a></li>
@@ -47,9 +45,10 @@
       </div>
     </div>
   </div>
-  <nav class="navigation navbar-menu" style="margin-top: -16px">
+
+  <nav class="navigation navbar-menu">
     <div class="container">
-      <div class="navigation__column center" style="margin-left: 245px">
+      <div class="navigation__column center" style="margin-left: 234px">
         <ul class="main-menu menu container">
           <li class="menu-item menu-item-has-children dropdown">
             <a href="index.html">Trang chủ</a>
@@ -59,8 +58,8 @@
             <a routerLink="/about">Giới thiệu</a>
           </li>
 
-          <li class="menu-item menu-item-has-children has-mega-menu">
-            <a href="#">Danh mục</a>
+          <li class="menu-item">
+            <a href="/joblist">Việc làm</a>
           </li>
 
           <li class="menu-item">
@@ -70,23 +69,13 @@
           <li class="menu-item menu-item-has-children dropdown">
             <a href="#">News</a>
             <ul class="sub-menu">
-              <li class="menu-item menu-item-has-children dropdown">
-                <a href="blog-grid.html" style="color: black">Blog-grid</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="blog-grid.html" style="color: black"
-                      >Blog Grid 1</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a href="blog-grid-2.html" style="color: black"
-                      >Blog Grid 2</a
-                    >
-                  </li>
-                </ul>
+              <li class="menu-item">
+                <a routerLink="/blog" style="color: black">Blog List</a>
               </li>
               <li class="menu-item">
-                <a href="blog-list.html" style="color: black">Blog List</a>
+                <a routerLink="/blog-single" style="color: black"
+                  >Blog Single</a
+                >
               </li>
             </ul>
           </li>
@@ -113,7 +102,7 @@
           </h4>
 
           <div class="action">
-            <a href="#" class="btn btn-primary">TẠO CV ONLINE</a>
+            <a href="/topcv" class="btn btn-primary">TẠO CV ONLINE</a>
             <a href="#" class="btn btn-success">TẢI CV LÊN</a>
           </div>
         </div>
