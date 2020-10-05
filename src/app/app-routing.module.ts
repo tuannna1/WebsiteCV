@@ -15,6 +15,8 @@ import { BlogSingleComponent } from './Components/blog-single/blog-single.compon
 
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
+import { EmployerComponent } from './Components/employer-component/employer.component';
+
 import { ContactComponent } from './Components/contact-component/contact.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
 
@@ -62,6 +64,10 @@ const routes: Routes = [
   {
     path: 'joblist',
     component: JoblistComponentComponent,
+  },
+  {
+    path: 'employer',
+    component: EmployerComponent,
   },
 ];
 
