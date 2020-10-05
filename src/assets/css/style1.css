@@ -169,11 +169,12 @@ li.nav-item.active {
 /*--/banner-info-w3layouts--*/
 
 .banner-info-w3layouts {
+
     padding-top: 10em;
 }
 
 .banner-info-w3layouts h3 {
-    color: #fff;
+    color: #0b0b0b;
     font-size: 3em;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
     letter-spacing: 1px;
