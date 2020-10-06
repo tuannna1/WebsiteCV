@@ -17,6 +17,7 @@ import { ApplyjobComponent } from './Components/applyjob-component/applyjob.comp
 import { AboutComponent } from './Components/about-component/applyjob.component';
 
 import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
+import { EmployerComponent } from './Components/employer-component/employer.component';
 
 // import { RegisterComponent } from './Components/register-component/register.component';
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
@@ -60,6 +61,7 @@ import {RegisterComponent} from './Components/register-component/register.compon
     BlogComponent,
     BlogSingleComponent,
     JoblistComponentComponent,
+<<<<<<< HEAD
     LoginComponent,
     RegisterComponent,
     RegisterComponent1,
@@ -67,6 +69,9 @@ import {RegisterComponent} from './Components/register-component/register.compon
     VerifyEmailComponent,
 
 
+=======
+    EmployerComponent,
+>>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
   ],
 
   imports: [

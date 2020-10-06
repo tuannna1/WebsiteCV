@@ -1,29 +1,55 @@
-<div class="body-form">
+<div
+  class="container"
+  style="
+    border: 1px solid rgb(160, 153, 153);
+    margin-bottom: 30px;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+  "
+>
+  <header>Register</header>
   <form>
-    <h1>ĐĂNG KÝ</h1>
-    <div class="form-group">
-
-      <input type="email" data-validate="Account Name is required" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Vui lòng nhập tên Tài khoản">
-     </div>
-
-      <div class="form-group">
-
-        <input type="email" data-validate="Email is required" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Vui lòng nhập Email hoặc Số điện thoại">
-       </div>
-       <div class="form-group">
-      <input type="password" data-validate="Password is required" class="form-control" id="exampleInputPassword1" placeholder="Vui lòng nhập Mật khẩu" >
+    <div class="input-field">
+      <input type="text" required />
+      <label>Username</label>
     </div>
-    <div class="form-group">
-
-      <input type="password" data-validate="Password is required" class="form-control" id="exampleInputPassword1" placeholder="Nhập lại mật khẩu" >
+    <div class="input-field">
+      <input type="text" required />
+      <label>Email</label>
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1"> Tôi đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của QT-HR</label>
+    <div class="input-field">
+      <input class="pswrd" type="password" required />
+      <span class="show">SHOW</span>
+      <label>Password</label>
     </div>
-    <button type="submit" class="btn btn-primary">Đăng ký</button><br><br>
-    <p>Bạn đã có tài khoản. <a href="login">Quay lại đăng nhập</a>!</p>
-
-
+    <div class="input-field">
+      <input class="pswrd" type="password" required />
+      <span class="show">SHOW</span>
+      <label>Confirm password</label>
+    </div>
+    <div class="button">
+      <div class="inner"></div>
+      <button>REGISTER</button>
+    </div>
   </form>
+
+  <div class="signup">
+    You are already a member? <a href="/login">Login now</a>
   </div>
+</div>
+<script>
+  var input = document.querySelector(".pswrd");
+  var show = document.querySelector(".show");
+  show.addEventListener("click", active);
+  function active() {
+    if (input.type === "password") {
+      input.type = "text";
+      show.style.color = "#1DA1F2";
+      show.textContent = "HIDE";
+    } else {
+      input.type = "password";
+      show.textContent = "SHOW";
+      show.style.color = "#111";
+    }
+  }
+</script>

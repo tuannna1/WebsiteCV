@@ -136,7 +136,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p1.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p1.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -150,7 +150,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p2.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p2.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -165,7 +165,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p3.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p3.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -179,7 +179,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p4.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p4.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -195,7 +195,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p4.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p4.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -209,7 +209,7 @@
             </div>
             <div class="mask">
               <a href="#">
-                <img src="assets/images/p4.jpg" class="img-fluid" alt=""/>
+                <img src="assets/images/p4.jpg" class="img-fluid" alt="" />
               </a>
             </div>
           </div>
@@ -221,44 +221,40 @@
 </section>
 <!-- //banner-bottom-wthree -->
 <!--/process-->
-<h3 class="tittle text-center mb-lg-4 mb-3">
-  HOT JOB
-</h3>
-<div class="col-lg-8 text-info-sec">
-  <!--/job1-->
-  <div class="job-post-main row" *ngFor="let data of jobData">
-    <div class="col-md-9 job-post-info text-left">
-      <div class="job-post-icon">
-        <i> <img src="{{data.logo}}"></i>
+<h3 class="tittle text-center mb-lg-4 mb-3">HOT JOB</h3>
+
+<div class="container">
+  <div class="col-lg-8 text-info-sec">
+    <!--/job1-->
+    <div class="job-post-main row" *ngFor="let data of jobData">
+      <div class="col-md-9 job-post-info text-left">
+        <div class="job-post-icon">
+          <i> <img src="{{ data.logo }}" /></i>
+        </div>
+        <div class="job-single-sec">
+          <h4>
+            <a href="#">{{ data.title }}</a>
+          </h4>
+          <p class="my-2">{{ data.description }}</p>
+          <ul class="job-list-info d-flex">
+            <li><i class="fas fa-briefcase"></i> Comera</li>
+            <li><i class="fas fa-map-marker-alt"></i> Da Nang</li>
+            <li><i class="fas fa-dollar-sign"></i> 300000 - 500000 / USD</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="job-single-sec">
-        <h4>
-          <a href="#">{{data.title}}</a>
-        </h4>
-        <p class="my-2">{{data.description}}</p>
-        <ul class="job-list-info d-flex">
-          <li>
-            <i class="fas fa-briefcase"></i> Comera
-          </li>
-          <li>
-            <i class="fas fa-map-marker-alt"></i> Da Nang
-          </li>
-          <li>
-            <i class="fas fa-dollar-sign"></i> 300000 - 500000 / USD
-          </li>
-        </ul>
+      <div class="col-md-3 job-single-time text-right">
+        <span class="job-time"> <i class="far fa-heart"></i> Full Time</span>
+        <a
+          href="javascript:void( window.open( 'https://form.jotform.com/202671468576465', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "
+          class="aply-btn"
+          >Appy Now</a
+        >
       </div>
-      <div class="clearfix"></div>
     </div>
-    <div class="col-md-3 job-single-time text-right">
-                                                <span class="job-time">
-                                                    <i class="far fa-heart"></i> Full Time</span>
-      <a
-        href="javascript:void( window.open( 'https://form.jotform.com/202671468576465', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "
-        class="aply-btn ">Appy Now</a>
-    </div>
+    <!--//job1-->
   </div>
-  <!--//job1-->
 </div>
 
 <section class="banner-bottom-wthree mid py-lg-5 py-3">
@@ -270,14 +266,19 @@
         </h3>
         <p></p>
         <div class="resume">
-          <a routerLink="/register" data-toggle="modal" data-target="#exampleModalCenter2">
-            <i  class="far fa-user"></i> Create Acccount</a>
-
+          <a
+            routerLink="/register"
+            data-toggle="modal"
+            data-target="#exampleModalCenter2"
+          >
+            <i class="far fa-user"></i> Create Acccount</a
+          >
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!--//job -->
 <!--job -->
 <section class="banner-bottom-wthree py-lg-5 py-md-5 py-3">
@@ -297,9 +298,9 @@
                 alt=" "
                 class="img-fluid rounded-circle"
               />
-              <br/>
+              <br />
               <strong>Recruitment Process</strong>
-              <br/>
+              <br />
               Lorem ipsum
             </div>
           </div>
@@ -311,9 +312,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>1.Job Vacancy</strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -324,9 +325,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>2. Job Analysis </strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -337,9 +338,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>3. Attracting Candidates </strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -350,9 +351,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>4.Screening </strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -363,9 +364,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>5.Interviewing Candidates </strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -376,9 +377,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>6.Selecting</strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
               <!--
@@ -389,9 +390,9 @@
                   alt=" "
                   class="img-fluid rounded-circle"
                 />
-                <br/>
+                <br />
                 <strong>7.Employee Evaluation </strong>
-                <br/>
+                <br />
                 Lorem ipsum
               </div>
             </div>
@@ -427,6 +428,7 @@
                   Aenean orci erat, placerat id pulvinar nec, tincidunt vel
                   eros.
                 </p>
+
                 <div class="mt-3 team-social text-center">
                   <ul class="social-icons text-center">
                     <li>
@@ -682,7 +684,6 @@
     <div class="container">
       <!--/mobile-app -->
       <div class="inner-sec-w3ls py-lg-5 py-3">
-        Nam arcu mauris, tincidunt sed convallis non, egestas ut lacus.
         <div class="row">
           <div class="col-md-7 app-info">
             <h3 class="header">Download &amp; Enjoy</h3>
@@ -699,7 +700,7 @@
                 >
                   <i class="fab fa-apple"></i>
                   <span class="app-con"
-                  >App Store
+                    >App Store
                     <span class="avail">Available now on the </span>
                   </span>
                 </a>
@@ -713,7 +714,7 @@
                   <i class="fab fa-google-play"></i>
 
                   <span class="app-con"
-                  >Google Play
+                    >Google Play
                     <span class="avail">Get in on</span>
                   </span>
                 </a>
@@ -727,7 +728,7 @@
             </p>
           </div>
           <div class="col-md-5 app-img">
-            <img src="assets/images/mobile.png" alt=" " class="img-fluid"/>
+            <img src="assets/images/mobile.png" alt=" " class="img-fluid" />
           </div>
         </div>
         <!--//mobile-app -->
@@ -746,6 +747,7 @@
         id="carouselExampleControls"
         class="carousel slide"
         data-ride="carousel"
+        style="margin-left: 130px"
       >
         <div class="carousel-inner mt-5">
           <div class="carousel-item active">
@@ -974,7 +976,10 @@
           role="button"
           data-slide="prev"
         >
-          <span class="fas fa-long-arrow-alt-left"></span>
+          <span
+            class="fas fa-long-arrow-alt-left"
+            style="margin-right: 160px"
+          ></span>
           <span class="sr-only">Previous</span>
         </a>
         <a

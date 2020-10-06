@@ -15,6 +15,8 @@ import { BlogSingleComponent } from './Components/blog-single/blog-single.compon
 
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
+import { EmployerComponent } from './Components/employer-component/employer.component';
+
 import { ContactComponent } from './Components/contact-component/contact.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
 import {LoginComponent} from './admin/login/login.component';
@@ -67,6 +69,7 @@ const routes: Routes = [
     path: 'joblist',
     component: JoblistComponentComponent,
   },
+<<<<<<< HEAD
   { path:  'admin/login',
     component:  LoginComponent,
   },
@@ -79,6 +82,12 @@ const routes: Routes = [
   { path:  'admin/verify-email',
     component:  VerifyEmailComponent,
   }
+=======
+  {
+    path: 'employer',
+    component: EmployerComponent,
+  },
+>>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
 ];
 
 @NgModule({
