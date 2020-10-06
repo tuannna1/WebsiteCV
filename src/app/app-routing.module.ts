@@ -17,6 +17,10 @@ import { CreateCVComponentComponent } from './Components/create-cv-component/cre
 
 import { ContactComponent } from './Components/contact-component/contact.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
+import {LoginComponent} from './admin/login/login.component';
+import {ForgotPasswordComponent} from './admin/forgot-password/forgot-password.component';
+import {VerifyEmailComponent} from './admin/verify-email/verify-email.component';
+import {RegisterComponent1} from './admin/register/register.component';
 
 const routes: Routes = [
   {
@@ -63,6 +67,18 @@ const routes: Routes = [
     path: 'joblist',
     component: JoblistComponentComponent,
   },
+  { path:  'admin/login',
+    component:  LoginComponent,
+  },
+  { path:  'admin/register',
+    component:  RegisterComponent1,
+  },
+  { path:  'admin/forgot-password',
+    component:  ForgotPasswordComponent,
+  },
+  { path:  'admin/verify-email',
+    component:  VerifyEmailComponent,
+  }
 ];
 
 @NgModule({

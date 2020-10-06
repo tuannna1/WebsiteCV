@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,22 +18,33 @@ import { AboutComponent } from './Components/about-component/applyjob.component'
 
 import { TopcvComponentComponent } from './Components/topcv-component/topcv-component.component';
 
-import { RegisterComponent } from './Components/register-component/register.component';
+// import { RegisterComponent } from './Components/register-component/register.component';
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
 // -----------thanh hau import blog ----------------------
 import { BlogComponent } from './Components/blog/blog.component';
 import { BlogSingleComponent } from './Components/blog-single/blog-single.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
+// @ts-ignore
+
 // -----------thanh hau import blog ----------------------
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { LoginComponent } from './admin/login/login.component';
+import { RegisterComponent1} from './admin/register/register.component';
+import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import {FormsModule} from '@angular/forms';
+import {RegisterComponent} from './Components/register-component/register.component';
 
-//import { library } from '@fortawesome/fontawesome-svg-core';
-//import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-//import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-//import { TooltipModule } from 'ngx-bootstrap/tooltip';
-/// import { ModalModule } from 'ngx-bootstrap/modal';
-//library.add(faCoffee);
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,15 +60,26 @@ import { JoblistComponentComponent } from './Components/joblist-component/joblis
     BlogComponent,
     BlogSingleComponent,
     JoblistComponentComponent,
+    LoginComponent,
+    RegisterComponent,
+    RegisterComponent1,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
+
+
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     // BsDropdownModule.forRoot(),
     // TooltipModule.forRoot(),
     //  ModalModule.forRoot()
     FontAwesomeModule,
+    FormsModule,
   ],
 
   providers: [],

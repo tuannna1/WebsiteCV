@@ -1,0 +1,34 @@
+<div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10 col-md-6">
+      <div class="card border-info">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="https://placeimg.com/128/128/nature">
+            </div>
+            <div class="col-md-8">
+
+              <div *ngIf="!(authService.user | async)">
+                <input [(ngModel)]="email" type="text" class="form-control mb-2" placeholder="Email" required autofocus>
+                <input [(ngModel)]="password" type="password" class="form-control mb-2" placeholder="Password" required>
+                <button (click)="signup()" [disabled]="!email || !password" class="btn btn-lg btn-primary btn-block mb-1"
+                        type="submit">Signup
+                </button>
+              </div>
+              <button (click)="logout()" *ngIf="authService.user | async" class="btn btn-lg btn-primary btn-block mb-1">
+                Logout
+              </button>
+              <h1 *ngIf="authService.user | async">
+                Welcome User: {{ (authService.user | async)?.email }}!
+              </h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
