@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponentComponent } from './Components/login-component/login-component.component';
@@ -34,12 +33,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './admin/login/login.component';
-import { RegisterComponent1} from './admin/register/register.component';
+import { RegisterComponent1 } from './admin/register/register.component';
 import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
-import {FormsModule} from '@angular/forms';
-import {RegisterComponent} from './Components/register-component/register.component';
-
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './Components/register-component/register.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -61,17 +59,12 @@ import {RegisterComponent} from './Components/register-component/register.compon
     BlogComponent,
     BlogSingleComponent,
     JoblistComponentComponent,
-<<<<<<< HEAD
     LoginComponent,
     RegisterComponent,
     RegisterComponent1,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-
-
-=======
     EmployerComponent,
->>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
   ],
 
   imports: [

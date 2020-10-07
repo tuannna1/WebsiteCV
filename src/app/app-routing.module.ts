@@ -19,10 +19,10 @@ import { EmployerComponent } from './Components/employer-component/employer.comp
 
 import { ContactComponent } from './Components/contact-component/contact.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
-import {LoginComponent} from './admin/login/login.component';
-import {ForgotPasswordComponent} from './admin/forgot-password/forgot-password.component';
-import {VerifyEmailComponent} from './admin/verify-email/verify-email.component';
-import {RegisterComponent1} from './admin/register/register.component';
+import { LoginComponent } from './admin/login/login.component';
+import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import { RegisterComponent1 } from './admin/register/register.component';
 
 const routes: Routes = [
   {
@@ -69,25 +69,15 @@ const routes: Routes = [
     path: 'joblist',
     component: JoblistComponentComponent,
   },
-<<<<<<< HEAD
-  { path:  'admin/login',
-    component:  LoginComponent,
-  },
-  { path:  'admin/register',
-    component:  RegisterComponent1,
-  },
-  { path:  'admin/forgot-password',
-    component:  ForgotPasswordComponent,
-  },
-  { path:  'admin/verify-email',
-    component:  VerifyEmailComponent,
-  }
-=======
+
+  { path: 'admin/login', component: LoginComponent },
+  { path: 'admin/register', component: RegisterComponent1 },
+  { path: 'admin/forgot-password', component: ForgotPasswordComponent },
+  { path: 'admin/verify-email', component: VerifyEmailComponent },
   {
     path: 'employer',
     component: EmployerComponent,
   },
->>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
 ];
 
 @NgModule({
