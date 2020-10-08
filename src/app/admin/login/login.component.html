@@ -6,7 +6,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 text-center">
-              <img src="https://placeimg.com/128/128/nature" />
+              <img src="https://placeimg.com/128/128/nature"/>
             </div>
             <div class="col-md-8">
               <div *ngIf="!(authService.user | async)">
@@ -33,27 +33,23 @@
                 >
                   Login
                 </button>
-<<<<<<< HEAD
-                  <hr>
-                  <p style="text-align:center">Other</p>
+                <hr>
+                <p style="text-align:center">Other</p>
+                <div class="form-group">
+                  <button type="buton" class="btn btn-outline-info btn-block mb-1" (click)="signInWithFacebook()">
+                    <i class="fab fa-facebook-square"></i>
+                    Login with Facebook
+                  </button>
                   <div class="form-group">
-                    <button type="buton" class="btn btn-outline-info btn-block mb-1" (click)="signInWithFacebook()">
-                      <i class="fab fa-facebook-square"></i>
+                    <button type="buton" class="btn btn-outline-danger btn-block mb-1" (click)="signInWithGoogle()">
+                      <i class="fab fa-google"></i>
                       Login with Facebook
                     </button>
-                    <div class="form-group">
-                      <button type="buton" class="btn btn-outline-danger btn-block mb-1" (click)="signInWithGoogle()">
-                        <i class="fab fa-google"></i>
-                        Login with Facebook
-                      </button>
-                  <button routerLink="/admin/register" class="btn btn-lg btn-primary btn-block mb-1"
-                          type="submit">Signup
-                  </button>
-=======
-                <div class="signup">
-                  Do not have an account?
-                  <a href="/admin/register">Signup now</a>
->>>>>>> 9dbb74ecf289a97b18a582f81ddf804bdbe73290
+                    <div class="signup">
+                      Do not have an account?
+                      <a href="/admin/register">Signup now</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
