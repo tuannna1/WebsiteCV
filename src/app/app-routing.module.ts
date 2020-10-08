@@ -23,6 +23,7 @@ import { LoginComponent } from './admin/login/login.component';
 import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
 import { RegisterComponent1 } from './admin/register/register.component';
+import {DashboardComponent} from "./admin/dashboard/dashboard.component";
 
 const routes: Routes = [
   {
@@ -74,6 +75,7 @@ const routes: Routes = [
   { path: 'admin/register', component: RegisterComponent1 },
   { path: 'admin/forgot-password', component: ForgotPasswordComponent },
   { path: 'admin/verify-email', component: VerifyEmailComponent },
+  { path: 'admin/dashboard', component: DashboardComponent },
   {
     path: 'employer',
     component: EmployerComponent,

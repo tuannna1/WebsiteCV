@@ -38,6 +38,7 @@ import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password
 import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './Components/register-component/register.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -65,6 +66,7 @@ import { RegisterComponent } from './Components/register-component/register.comp
     ForgotPasswordComponent,
     VerifyEmailComponent,
     EmployerComponent,
+    DashboardComponent,
   ],
 
   imports: [
