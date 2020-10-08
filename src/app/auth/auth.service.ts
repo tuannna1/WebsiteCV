@@ -36,21 +36,6 @@ export class AuthService {
       })
   }
 
-  signup(email: string, password: string) {
-    this.firebaseAuth
-      .createUserWithEmailAndPassword(email, password)
-      .then((value) => {
-        this.ngZone.run(() => {
-          this.router.navigate(['verify-email']);
-        });
-        console.log('Success!', value);
-
-      })
-      .catch((err) => {
-        console.log('Something went wrong:', err.message);
-        alert("danger" + err.message);
-      });
-  }
 
   signInWithFacebook() {
     return this.firebaseAuth.signInWithPopup(
@@ -82,10 +67,30 @@ export class AuthService {
       })
       .catch((err) => {
         console.log('Something went wrong:', err.message);
-        alert("danger" + err.message);
+        window.alert(err.message);
+      });
+  }
+  signup(email: string, password: string) {
+    this.firebaseAuth
+      .createUserWithEmailAndPassword(email, password)
+      .then((value) => {
+        this.ngZone.run(() => {
+          this.router.navigate(['admin/verify-email']);
+        });
+        this.SendVerificationMail();
+        console.log('Success!', value);
+
+      })
+      .catch((err) => {
+        console.log('Something went wrong:', err.message);
+        window.alert(err.message);
       });
   }
 
+  get isLoggedIn(): boolean {
+    const user = JSON.parse(localStorage.getItem('user'));
+    return (user !== null && user.emailVerified !== false) ? true : false;
+  }
   logout() {
     this.firebaseAuth.signOut();
     alert(" Logout!");

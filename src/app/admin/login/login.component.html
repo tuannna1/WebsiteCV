@@ -15,6 +15,7 @@
                   type="text"
                   class="form-control mb-2"
                   placeholder="Email"
+                  #userEmail
                   required
                   autofocus
                 />
@@ -23,10 +24,11 @@
                   type="password"
                   class="form-control mb-2"
                   placeholder="Password"
+                  #userPassword
                   required
                 />
                 <button
-                  (click)="login()"
+                  (click)="login(userEmail.value, userPassword.value)"
                   [disabled]="!email || !password"
                   class="btn btn-lg btn-primary btn-block mb-1"
                   type="submit"
