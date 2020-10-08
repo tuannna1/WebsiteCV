@@ -30,6 +30,13 @@ export class LoginComponent implements OnInit {
       })
       .catch((err) => console.log(err));
   }
+  signInWithGithub() {
+    this.authService.signInWithGithub()
+      .then((res) => {
+        this.router.navigate(['/'])
+      })
+      .catch((err) => console.log(err));
+  }
   logout() {
     this.authService.logout();
   }

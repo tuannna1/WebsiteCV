@@ -14,6 +14,18 @@ export class AuthService {
   constructor(private firebaseAuth: AngularFireAuth, public ngZone: NgZone, public router: Router) {
     this.user = firebaseAuth.authState;
   }
+  ForgotPassword(passwordResetEmail) {
+    return this.firebaseAuth
+      .sendPasswordResetEmail(passwordResetEmail)
+      .then(() => {
+        window.alert('Password reset email sent, check your inbox.');
+        this.ngZone.run(() => {
+          this.router.navigate(['admin/login']);
+        });
+      }).catch((error) => {
+        window.alert(error)
+      })
+  }
   signup(email: string, password: string) {
     this.firebaseAuth
       .createUserWithEmailAndPassword(email, password)
@@ -37,6 +49,11 @@ export class AuthService {
   signInWithGoogle() {
     return this.firebaseAuth.signInWithPopup(
       new firebase.auth.GoogleAuthProvider()
+    )
+  }
+  signInWithGithub() {
+    return this.firebaseAuth.signInWithPopup(
+      new firebase.auth.GithubAuthProvider()
     )
   }
   login(email: string, password: string) {
