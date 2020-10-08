@@ -6,7 +6,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 text-center">
-              <img src="https://placeimg.com/128/128/nature" />
+              <img src="https://placeimg.com/128/128/nature"/>
             </div>
             <div class="col-md-8">
               <div *ngIf="!(authService.user | async)">
@@ -25,11 +25,11 @@
                   placeholder="Password"
                   required
                 />
-                <button
-                  (click)="signup()"
-                  [disabled]="!email || !password"
-                  class="btn btn-lg btn-primary btn-block mb-1"
-                  type="submit"
+                <button routerLink="/admin/verify-email"
+                        (click)="signup()"
+                        [disabled]="!email || !password"
+                        class="btn btn-lg btn-primary btn-block mb-1"
+                        type="submit"
                 >
                   Signup
                 </button>

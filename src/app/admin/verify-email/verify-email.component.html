@@ -1,1 +1,32 @@
-<p>verify-email works!</p>
+<div class="container pt-3" style="margin-bottom: 50px">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10 col-md-7">
+      <div class="card border-info">
+        <div class="card-header"><h3>Thank You for Registering!</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="https://www.flaticon.com/svg/static/icons/svg/167/167750.svg"/>
+            </div>
+            <div class="col-md-8">
+              <div class="formGroup" *ngIf="authService.user as user">
+                <p class="text-center">We have sent a confirmation email to
+                  <strong>{{ (authService.user | async)?.email }}</strong>.</p>
+                <p class="text-center">Please check your email and click on the link to verfiy your email address.</p>
+                <button type="button" class="btn btn-lg btn-primary btn-block mb-1"
+                        (click)="authService.SendVerificationMail()">
+                  <i class="fas fa-redo-alt"></i>
+                  Resend Verification Email
+                </button>
+                <div class="login">
+                  <span>Go <a href="admin/dashboard"> Dashboard </a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

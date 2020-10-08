@@ -14,6 +14,7 @@ export class RegisterComponent1 implements OnInit {
   signup() {
     this.authService.signup(this.email, this.password);
     this.email = this.password = '';
+    this.authService.SendVerificationMail()
   }
   logout() {
     this.authService.logout();
