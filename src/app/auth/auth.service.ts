@@ -39,6 +39,11 @@ export class AuthService {
       new firebase.auth.GoogleAuthProvider()
     )
   }
+  signInWithGithub() {
+    return this.firebaseAuth.signInWithPopup(
+      new firebase.auth.GithubAuthProvider()
+    )
+  }
   login(email: string, password: string) {
     this.firebaseAuth
       .signInWithEmailAndPassword(email, password)

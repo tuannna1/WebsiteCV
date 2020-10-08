@@ -1,12 +1,8 @@
-<button (click)="logout()" *ngIf="authService.user | async" class="btn btn-lg btn-primary btn-block mb-1">
-  Logout
-</button>
-
 <div class="row" *ngIf="authService.user | async">
   <div class="col-md-12">
     <div class="media">
-      <!--                    <img class="align-self-start mr-5 img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"-->
-      <!--                         alt="{{user.displayName}}">-->
+      <img style="height: 50px;width: 50px" class="align-self-start" src="{{(authService.user | async)?.photoURL }}"
+           alt="{{ (authService.user | async)?.displayName }}">
       <div class="media-body">
         <h1>Hello: <strong>{{ (authService.user | async)?.displayName }}!</strong></h1>
         <p>User ID: <strong>{{ (authService.user | async)?.uid }}!</strong></p>
