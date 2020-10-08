@@ -6,7 +6,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 text-center">
-              <img src="https://placeimg.com/128/128/nature"/>
+              <img src="https://placeimg.com/128/128/nature" />
             </div>
             <div class="col-md-8">
               <div *ngIf="!(authService.user | async)">
@@ -33,18 +33,27 @@
                 >
                   Login
                 </button>
-                <hr>
-                <p style="text-align:center">Other</p>
+                <hr />
+                <p style="text-align: center">Other</p>
                 <div class="form-group">
-                  <button type="buton" class="btn btn-outline-info btn-block mb-1" (click)="signInWithFacebook()">
+                  <button
+                    type="buton"
+                    class="btn btn-outline-info btn-block mb-1"
+                    (click)="signInWithFacebook()"
+                  >
                     <i class="fab fa-facebook-square"></i>
                     Login with Facebook
                   </button>
                   <div class="form-group">
-                    <button type="buton" class="btn btn-outline-danger btn-block mb-1" (click)="signInWithGoogle()">
+                    <button
+                      type="buton"
+                      class="btn btn-outline-danger btn-block mb-1"
+                      (click)="signInWithGoogle()"
+                    >
                       <i class="fab fa-google"></i>
-                      Login with Facebook
+                      Login with Google
                     </button>
+                    <br />
                     <div class="signup">
                       Do not have an account?
                       <a href="/admin/register">Signup now</a>
