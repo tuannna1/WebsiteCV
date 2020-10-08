@@ -1,6 +1,6 @@
 import {Injectable, NgZone} from '@angular/core';
 import { Router } from '@angular/router';
-import { auth } from 'firebase/app';
+import * as firebase from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from '../Service/user';
 import { Observable } from 'rxjs';
@@ -29,7 +29,16 @@ export class AuthService {
         alert("danger"+ err.message);
       });
   }
-
+  signInWithFacebook() {
+    return this.firebaseAuth.signInWithPopup(
+      new firebase.auth.FacebookAuthProvider()
+    )
+  }
+  signInWithGoogle() {
+    return this.firebaseAuth.signInWithPopup(
+      new firebase.auth.GoogleAuthProvider()
+    )
+  }
   login(email: string, password: string) {
     this.firebaseAuth
       .signInWithEmailAndPassword(email, password)
