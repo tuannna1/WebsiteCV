@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable, NgZone} from '@angular/core';
 import { Router } from '@angular/router';
 import { auth } from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
@@ -11,13 +11,16 @@ import { Observable } from 'rxjs';
 export class AuthService {
   user: Observable<firebase.User>;
 
-  constructor(private firebaseAuth: AngularFireAuth) {
+  constructor(private firebaseAuth: AngularFireAuth, public ngZone: NgZone, public router: Router) {
     this.user = firebaseAuth.authState;
   }
   signup(email: string, password: string) {
     this.firebaseAuth
       .createUserWithEmailAndPassword(email, password)
       .then((value) => {
+        this.ngZone.run(() => {
+          this.router.navigate(['/']);
+        });
         console.log('Success!', value);
         alert("Registration Successful! Please Verify Your Email");
       })
@@ -31,6 +34,9 @@ export class AuthService {
     this.firebaseAuth
       .signInWithEmailAndPassword(email, password)
       .then((value) => {
+        this.ngZone.run(() => {
+          this.router.navigate(['/']);
+        });
         console.log('Nice, it worked!');
         alert( "Successfully Logged In!");
       })
