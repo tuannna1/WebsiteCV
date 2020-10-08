@@ -12,26 +12,22 @@
           </a>
         </div>
         <div class="col-lg-7" style="margin-top: 25px">
-
           <div class="header__actions">
             <div *ngIf="!login" routerLink="admin/login">
-              <i  class="fas fa-user"></i>/
+              <i class="fas fa-user"></i>/
               <a *ngIf="authService.user | async" href="/admin/dashboard">
-                [[<strong >{{ (authService.user | async)?.email }}</strong>]]
+                [[<strong>{{ (authService.user | async)?.email }}</strong
+                >]]
               </a>
-
             </div>
 
             <a *ngIf="!(authService.user | async)" href="admin/register"
-            >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
+              >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
             ></a>
 
-            <a routerLink="/contact">
-              Liên hệ <i class="glyphicon glyphicon-phone-alt"></i
-            ></a>
             <a class="dropdown">
               <a class="dropbtn"
-              >Nhà Tuyển Dụng <i class="glyphicon glyphicon-briefcase"></i
+                >Nhà Tuyển Dụng <i class="glyphicon glyphicon-briefcase"></i
               ></a>
               <div class="dropdown-content">
                 <a routerLink="/login">Đăng nhập</a>
@@ -49,7 +45,7 @@
                 data-toggle="dropdown"
                 aria-haspopup="false"
                 aria-expanded="true"
-              >Ngôn ngữ <i class="fas fa-globe-americas"></i>
+                >Ngôn ngữ <i class="fas fa-globe-americas"></i>
                 <ul class="dropdown-menu">
                   <li><a href="#">English</a></li>
                   <li><a href="#">Japanese</a></li>
@@ -57,7 +53,8 @@
                 </ul>
               </a>
               <a (click)="logout()" *ngIf="authService.user | async" href="#"
-              >Đăng xuất <i class="fas fa-sign-out-alt"></i></a>
+                >Đăng xuất <i class="fas fa-sign-out-alt"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -93,20 +90,13 @@
               </li>
               <li class="menu-item">
                 <a routerLink="/blog-single" style="color: black"
-                >Blog Single</a
+                  >Blog Single</a
                 >
               </li>
             </ul>
           </li>
-          <li class="menu-item menu-item-has-children dropdown">
-            <a href="#">Job</a>
-            <ul class="sub-menu">
-              <li class="menu-item">
-                <a routerLink="/applyJob" style="color: black"
-                >Application for job
-                </a>
-              </li>
-            </ul>
+          <li class="menu-item">
+            <a routerLink="/contact">Contact</a>
           </li>
         </ul>
       </div>

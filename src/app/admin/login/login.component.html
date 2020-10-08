@@ -1,4 +1,4 @@
-<div class="container pt-3">
+<div class="container pt-3" style="margin-bottom: 50px">
   <div class="row justify-content-sm-center">
     <div class="col-sm-10 col-md-6">
       <div class="card border-info">
@@ -6,16 +6,34 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 text-center">
-              <img src="https://placeimg.com/128/128/nature">
+              <img src="https://placeimg.com/128/128/nature" />
             </div>
             <div class="col-md-8">
-
-                <div *ngIf="!(authService.user | async)">
-                <input [(ngModel)]="email" type="text" class="form-control mb-2" placeholder="Email" required autofocus>
-                <input [(ngModel)]="password" type="password" class="form-control mb-2" placeholder="Password" required>
-                <button (click)="login()" [disabled]="!email || !password" class="btn btn-lg btn-primary btn-block mb-1"
-                        type="submit">Login
+              <div *ngIf="!(authService.user | async)">
+                <input
+                  [(ngModel)]="email"
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Email"
+                  required
+                  autofocus
+                />
+                <input
+                  [(ngModel)]="password"
+                  type="password"
+                  class="form-control mb-2"
+                  placeholder="Password"
+                  required
+                />
+                <button
+                  (click)="login()"
+                  [disabled]="!email || !password"
+                  class="btn btn-lg btn-primary btn-block mb-1"
+                  type="submit"
+                >
+                  Login
                 </button>
+<<<<<<< HEAD
                   <hr>
                   <p style="text-align:center">Other</p>
                   <div class="form-group">
@@ -31,16 +49,17 @@
                   <button routerLink="/admin/register" class="btn btn-lg btn-primary btn-block mb-1"
                           type="submit">Signup
                   </button>
+=======
+                <div class="signup">
+                  Do not have an account?
+                  <a href="/admin/register">Signup now</a>
+>>>>>>> 9dbb74ecf289a97b18a582f81ddf804bdbe73290
                 </div>
-
-
-
+              </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
