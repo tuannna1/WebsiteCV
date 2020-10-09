@@ -2,7 +2,7 @@
   <div class="header__top">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12" style="margin-top: 25px; margin-left:100px;">
           <a href="">
             <img
               src="../../../assets/images/images/QT-HR.png"
@@ -11,7 +11,7 @@
             />
           </a>
         </div>
-        <div class="col-lg-5" style="margin-top: 25px; margin-left: 190px">
+        <div class="col-lg-5" style="margin-top: 25px; margin-left: -50px">
           <div class="header__actions" style="margin-left: 80px">
             <div *ngIf="!login" style="width: 550px">
               <a href="admin/login"><i style="color:darkslateblue" class="fa fa-user-circle fa-2x "></i></a>
@@ -20,7 +20,7 @@
                 >]]
               </a>
             </div>
-<hr>
+          <hr style="width: 546px;">
             <a *ngIf="!(authService.user | async)" href="admin/register"
               >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
             ></a>
