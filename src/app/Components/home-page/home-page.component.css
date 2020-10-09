@@ -1,0 +1,10 @@
+a{
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.para_vl > a:hover{
+  font-size: large;
+  color: yellow;
+  transition: 0.2s;
+}

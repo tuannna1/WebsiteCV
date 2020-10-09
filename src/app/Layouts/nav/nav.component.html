@@ -2,34 +2,34 @@
   <div class="header__top">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12" style="margin-top: 25px; margin-left:100px;">
+        <div class="col-lg-2 col-md-7 col-sm-6 col-xs-12" style="margin-top: 25px; margin-left:100px;">
           <a href="">
             <img
               src="../../../assets/images/images/QT-HR.png"
               alt="logo"
-              style="height: 150px; width: 160px; margin: 20px 0 0 90px"
+              style="height: 170px; width: 170px; margin: 20px 0 15px 20px"
             />
           </a>
         </div>
-        <div class="col-lg-5" style="margin-top: 25px; margin-left: -50px">
-          <div class="header__actions" style="margin-left: 80px">
+        <div class="col-lg-5" style="margin-top: 50px; margin-left: 440px;">
+          <div class="header__actions" style="margin-left: 80px; width:700px; height: 130px;">
             <div *ngIf="!login" style="width: 550px">
               <a href="admin/login"
                 ><i
-                  style="color: darkslateblue"
+                  style="color: darkslateblue; position: relative;"
                   class="fa fa-user-circle fa-2x"
                 ></i
               ></a>
-              <a *ngIf="authService.user | async" href="/admin/dashboard">
-                [[<strong>{{ (authService.user | async)?.email }}</strong
-                >]]
+              <a *ngIf="authService.user | async" href="/admin/dashboard" style="margin-left: 5px;">
+                <strong>{{ (authService.user | async)?.email }}</strong
+                >
               </a>
             </div>
-<<<<<<< HEAD
-            <hr />
-=======
-          <hr style="width: 546px;">
->>>>>>> e901e024576fdbf4cc922f02dda1bd541e52e6fa
+
+
+
+          <hr style="width: 570px;">
+
             <a *ngIf="!(authService.user | async)" href="admin/register"
               >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
             ></a>

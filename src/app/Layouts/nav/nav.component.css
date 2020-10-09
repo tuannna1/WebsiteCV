@@ -175,3 +175,14 @@ img {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+
+a{
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover{
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
