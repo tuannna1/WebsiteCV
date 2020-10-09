@@ -61,17 +61,14 @@ import {RegisterComponent} from './Components/register-component/register.compon
     BlogComponent,
     BlogSingleComponent,
     JoblistComponentComponent,
-<<<<<<< HEAD
     LoginComponent,
     RegisterComponent,
     RegisterComponent1,
     ForgotPasswordComponent,
     VerifyEmailComponent,
 
-
-=======
     EmployerComponent,
->>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
+
   ],
 
   imports: [

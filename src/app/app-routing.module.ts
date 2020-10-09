@@ -69,7 +69,6 @@ const routes: Routes = [
     path: 'joblist',
     component: JoblistComponentComponent,
   },
-<<<<<<< HEAD
   { path:  'admin/login',
     component:  LoginComponent,
   },
@@ -81,13 +80,12 @@ const routes: Routes = [
   },
   { path:  'admin/verify-email',
     component:  VerifyEmailComponent,
-  }
-=======
+  },
   {
     path: 'employer',
     component: EmployerComponent,
   },
->>>>>>> bc1e335bd056125bafb90e1a7ce7326f662bd123
+
 ];
 
 @NgModule({
