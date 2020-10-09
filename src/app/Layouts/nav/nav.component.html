@@ -7,20 +7,25 @@
             <img
               src="../../../assets/images/images/QT-HR.png"
               alt="logo"
-              style="height: 100px"
+              style="height: 150px; width: 160px; margin: 20px 0 0 90px"
             />
           </a>
         </div>
         <div class="col-lg-5" style="margin-top: 25px; margin-left: 190px">
           <div class="header__actions" style="margin-left: 80px">
             <div *ngIf="!login" style="width: 550px">
-              <a href="admin/login"><i style="color:darkslateblue" class="fa fa-user-circle fa-2x "></i></a>
+              <a href="admin/login"
+                ><i
+                  style="color: darkslateblue"
+                  class="fa fa-user-circle fa-2x"
+                ></i
+              ></a>
               <a *ngIf="authService.user | async" href="/admin/dashboard">
                 [[<strong>{{ (authService.user | async)?.email }}</strong
                 >]]
               </a>
             </div>
-<hr>
+            <hr />
             <a *ngIf="!(authService.user | async)" href="admin/register"
               >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
             ></a>
