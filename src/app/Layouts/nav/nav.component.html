@@ -1,6 +1,6 @@
 <header class="header" style="background-color: #ffffff">
   <div class="header__top">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12">
           <a href="">
@@ -11,18 +11,20 @@
             />
           </a>
         </div>
-        <div class="col-lg-7" style="margin-top: 25px">
-          <div class="header__actions">
-            <a *ngIf="!login" routerLink="/login">
-              Đăng nhập <i class="fas fa-sign-in-alt"></i
-            ></a>
-            <a *ngIf="!login" routerLink="/register"
+        <div class="col-lg-5" style="margin-top: 25px; margin-left: 190px">
+          <div class="header__actions" style="margin-left: 80px">
+            <div *ngIf="!login" style="width: 550px">
+              <a href="admin/login"><i style="color:darkslateblue" class="fa fa-user-circle fa-2x "></i></a>
+              <a *ngIf="authService.user | async" href="/admin/dashboard">
+                [[<strong>{{ (authService.user | async)?.email }}</strong
+                >]]
+              </a>
+            </div>
+<hr>
+            <a *ngIf="!(authService.user | async)" href="admin/register"
               >Đăng ký <i class="glyphicon glyphicon-info-sign"></i
             ></a>
 
-            <a routerLink="/contact">
-              Liên hệ <i class="glyphicon glyphicon-phone-alt"></i
-            ></a>
             <a class="dropdown">
               <a class="dropbtn"
                 >Nhà Tuyển Dụng <i class="glyphicon glyphicon-briefcase"></i
@@ -50,6 +52,9 @@
                   <li><a href="#">Chinese</a></li>
                 </ul>
               </a>
+              <a (click)="logout()" *ngIf="authService.user | async" href="#"
+                >Đăng xuất <i class="fas fa-sign-out-alt"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -58,9 +63,9 @@
   </div>
 
   <nav class="navigation navbar-menu">
-    <div class="container">
-      <div class="navigation__column center" style="margin-left: 234px">
-        <ul class="main-menu menu container">
+    <div class="container-fluid">
+      <div class="navigation__column">
+        <ul class="main-menu menu container" style="margin-left: 330px">
           <li class="menu-item menu-item-has-children dropdown">
             <a href="index.html">Trang chủ</a>
           </li>
@@ -90,15 +95,8 @@
               </li>
             </ul>
           </li>
-          <li class="menu-item menu-item-has-children dropdown">
-            <a href="#">Job</a>
-            <ul class="sub-menu">
-              <li class="menu-item">
-                <a routerLink="/applyJob" style="color: black"
-                  >Application for job
-                </a>
-              </li>
-            </ul>
+          <li class="menu-item">
+            <a routerLink="/contact">Contact</a>
           </li>
         </ul>
       </div>

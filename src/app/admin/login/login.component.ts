@@ -16,7 +16,27 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.email, this.password);
     this.email = this.password = '';
   }
-
+  signInWithFacebook() {
+    this.authService.signInWithFacebook()
+      .then((res) => {
+        this.router.navigate(['/'])
+      })
+      .catch((err) => console.log(err));
+  }
+  signInWithGoogle() {
+    this.authService.signInWithGoogle()
+      .then((res) => {
+        this.router.navigate(['/'])
+      })
+      .catch((err) => console.log(err));
+  }
+  signInWithGithub() {
+    this.authService.signInWithGithub()
+      .then((res) => {
+        this.router.navigate(['/'])
+      })
+      .catch((err) => console.log(err));
+  }
   logout() {
     this.authService.logout();
   }

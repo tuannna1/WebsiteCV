@@ -1,0 +1,14 @@
+<div class="row" *ngIf="authService.user | async">
+  <div class="col-md-12">
+    <div class="media">
+      <img style="height: 50px;width: 50px" class="align-self-start" src="{{(authService.user | async)?.photoURL }}"
+           alt="{{ (authService.user | async)?.displayName }}">
+      <div class="media-body">
+        <h1>Hello: <strong>{{ (authService.user | async)?.displayName }}!</strong></h1>
+        <p>User ID: <strong>{{ (authService.user | async)?.uid }}!</strong></p>
+        <p>Email: <strong>{{ (authService.user | async)?.email }}!</strong></p>
+        <p>Email Verified: <strong>{{ (authService.user | async)?.emailVerified }}!</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

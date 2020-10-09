@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from "../../auth/auth.service";
 
 @Component({
   selector: 'app-nav',
@@ -36,8 +37,10 @@ imageUrl11 = '';
 
 login = false;
 role = 0;
-  constructor() { }
-
+  constructor(public  authService: AuthService) { }
+  logout() {
+    this.authService.logout();
+  }
   ngOnInit(): void {
   }
 

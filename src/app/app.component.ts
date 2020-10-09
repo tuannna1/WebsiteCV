@@ -1,20 +1,18 @@
-import {Component, OnInit} from '@angular/core';
-import {NavigationEnd, Router} from '@angular/router';
-import {AuthService} from './auth/auth.service';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { AuthService } from './auth/auth.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   title = 'ShopDuAn';
   email: string;
   password: string;
 
-
-  constructor(public authService: AuthService, private router: Router) {
-  }
+  constructor(public authService: AuthService, private router: Router) {}
   signup() {
     this.authService.signup(this.email, this.password);
     this.email = this.password = '';
@@ -41,7 +39,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.events.subscribe(event => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.createNode('node0', 'bootstrap.js');
         this.createNode('node1', 'jotform.js');
@@ -59,6 +57,4 @@ export class AppComponent implements OnInit {
       }
     });
   }
-
-
 }
