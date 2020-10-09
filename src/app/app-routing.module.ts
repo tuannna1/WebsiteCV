@@ -71,11 +71,26 @@ const routes: Routes = [
     component: JoblistComponentComponent,
   },
 
+  { path:  'admin/login',
+    component:  LoginComponent,
+  },
+  { path:  'admin/register',
+    component:  RegisterComponent1,
+  },
+  { path:  'admin/forgot-password',
+    component:  ForgotPasswordComponent,
+  },
+  { path:  'admin/verify-email',
+    component:  VerifyEmailComponent,
+  },
+
+
   { path: 'admin/login', component: LoginComponent },
   { path: 'admin/register', component: RegisterComponent1 },
   { path: 'admin/forgot-password', component: ForgotPasswordComponent },
   { path: 'admin/verify-email', component: VerifyEmailComponent },
   { path: 'admin/dashboard', component: DashboardComponent },
+
   {
     path: 'employer',
     component: EmployerComponent,

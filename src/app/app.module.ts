@@ -65,8 +65,13 @@ import {DashboardComponent} from './admin/dashboard/dashboard.component';
     RegisterComponent1,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+
+
+    EmployerComponent,
+
     EmployerComponent,
     DashboardComponent,
+
   ],
 
   imports: [
