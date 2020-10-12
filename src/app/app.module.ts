@@ -16,7 +16,6 @@ import {ApplyjobComponent} from './Components/applyjob-component/applyjob.compon
 import {AboutComponent} from './Components/about-component/applyjob.component';
 
 import {TopcvComponentComponent} from './Components/topcv-component/topcv-component.component';
-import {EmployerComponent} from './Components/employer-component/employer.component';
 
 // import { RegisterComponent } from './Components/register-component/register.component';
 import {CreateCVComponentComponent} from './Components/create-cv-component/create-cv-component.component';
@@ -65,11 +64,6 @@ import {DashboardComponent} from './admin/dashboard/dashboard.component';
     RegisterComponent1,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-
-
-    EmployerComponent,
-
-    EmployerComponent,
     DashboardComponent,
 
   ],

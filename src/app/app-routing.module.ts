@@ -15,8 +15,6 @@ import { BlogSingleComponent } from './Components/blog-single/blog-single.compon
 
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
-import { EmployerComponent } from './Components/employer-component/employer.component';
-
 import { ContactComponent } from './Components/contact-component/contact.component';
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
 import { LoginComponent } from './admin/login/login.component';
@@ -90,11 +88,6 @@ const routes: Routes = [
   { path: 'admin/forgot-password', component: ForgotPasswordComponent },
   { path: 'admin/verify-email', component: VerifyEmailComponent },
   { path: 'admin/dashboard', component: DashboardComponent },
-
-  {
-    path: 'employer',
-    component: EmployerComponent,
-  },
 ];
 
 @NgModule({
