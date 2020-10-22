@@ -299,3 +299,7 @@ footer .logo img {
   left: -6px;
   background-color: #888
 }
+
+.service a{
+  font-weight: bold;
+}
