@@ -16,6 +16,8 @@ import { BlogSingleComponent } from './Components/blog-single/blog-single.compon
 import { CreateCVComponentComponent } from './Components/create-cv-component/create-cv-component.component';
 
 import { ContactComponent } from './Components/contact-component/contact.component';
+import { EmployerComponentComponent } from './Components/employer-component/employer-component.component';
+
 import { JoblistComponentComponent } from './Components/joblist-component/joblist-component.component';
 import { LoginComponent } from './admin/login/login.component';
 import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
@@ -68,6 +70,11 @@ const routes: Routes = [
     path: 'joblist',
     component: JoblistComponentComponent,
   },
+  {
+    path: 'employer',
+    component: EmployerComponentComponent,
+  },
+
 
   { path:  'admin/login',
     component:  LoginComponent,
@@ -81,6 +88,7 @@ const routes: Routes = [
   { path:  'admin/verify-email',
     component:  VerifyEmailComponent,
   },
+
 
 
   { path: 'admin/login', component: LoginComponent },
