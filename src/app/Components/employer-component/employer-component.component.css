@@ -1,0 +1,301 @@
+body {
+  font-family: roboto, sans-serif;
+  color: #444
+}
+
+
+.navbar-default .navbar-nav>li>a {
+  color: #eee;
+  text-transform: uppercase;
+  padding: 20px
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #ccc
+}
+
+
+#hero h1 {
+  margin-top: 160px;
+  font-size: 40px;
+  font-weight: 300
+}
+
+#hero h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #eee;
+  margin-bottom: 80px
+}
+
+#hero .action {
+  margin-bottom: 150px
+}
+
+@media(max-width:425px) {
+  #hero h1 {
+    margin-top: 160px;
+    font-size: 30px
+  }
+  #hero h2 {
+    margin-bottom: 60px
+  }
+}
+
+#hero .action .btn {
+  border-radius: 2px;
+  padding: 12px 40px;
+  margin: 0 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px
+}
+
+#companies {
+  background-color: #eee;
+  box-shadow: 0 1px 1px #ccc;
+  text-align: center
+}
+
+#companies ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0
+}
+
+#companies ul li {
+  display: inline-block;
+  margin: 20px
+}
+
+#companies ul li img {
+  max-height: 50px
+}
+
+@media(max-width:1024px) {
+  #companies ul li img {
+    max-height: 30px
+  }
+  #companies ul li {
+    margin: 15px 10px
+  }
+}
+
+.block-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 40px 0;
+  color: #666
+}
+
+#services .stat {
+  text-align: center;
+  margin-bottom: 80px;
+  cursor: pointer
+}
+
+#services .stat:hover {
+  color: #fe7013
+}
+
+#services .stat .number {
+  font-size: 50px;
+}
+
+#services .stat .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #999
+}
+
+@media(max-width:768px) {
+  #services .stat {
+    margin-bottom: 40px
+  }
+  #services .stat .number {
+    font-size: 50px
+  }
+  #services .stat .title {
+    font-size: 18px
+  }
+}
+
+#services .service {
+  margin-bottom: 100px
+}
+
+@media(max-width:425px) {
+  #services .service {
+    margin-bottom: 40px
+  }
+}
+
+#services .service h3 {
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 50px
+}
+
+#services .service h3:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 6px;
+  width: 40px;
+  background-color: #444
+}
+
+#services .service p {
+  font-size: 18px;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #666
+}
+
+#press {
+  text-align: center;
+  padding: 60px 0
+}
+
+#press .container {
+  border-top: 1px solid #ddd
+}
+
+#press ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0
+}
+
+#press ul li {
+  display: inline-block;
+  margin: 10px 20px
+}
+
+#press ul li img {
+  max-height: 50px
+}
+
+@media(max-width:1024px) {
+  #press ul li img {
+    max-height: 30px
+  }
+  #press ul li {
+    margin: 15px 10px
+  }
+}
+
+#highlight {
+  min-height: 200px;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 80px 0
+}
+
+#highlight .message {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 10px
+}
+
+#highlight .btn {
+  border-radius: 2px;
+  padding: 12px 40px;
+  margin: 0 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px
+}
+
+footer {
+  padding: 40px 0;
+  min-height: 80px;
+  background-color: #eee;
+  color: #666
+}
+
+footer .copyright {
+  font-size: 12px
+}
+
+footer .logo {
+  margin-bottom: 10px;
+  display: inline-block
+}
+
+footer .logo img {
+  height: 60px
+}
+
+@media(min-width:1024px) {
+  footer>.container>.row>div:last-child {
+    text-align: right
+  }
+}
+
+#videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0
+}
+
+#videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+#progress .step {
+  cursor: pointer;
+  min-height: 100px;
+  border-left: 1px solid #ccc;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  position: relative
+}
+
+#progress .step:hover {
+  border-color: #fe7013
+}
+
+#progress .step:hover .indicator {
+  background-color: #fe7013
+}
+
+#progress .step:hover .title {
+  color: #fe7013
+}
+
+#progress .title {
+  font-size: 18px;
+  font-weight: 500
+}
+
+#progress .desc {
+  color: #666;
+  font-size: 15px;
+  font-weight: 300
+}
+
+#progress .indicator {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  left: -6px;
+  background-color: #888
+}
