@@ -88,9 +88,9 @@ body {
 .block-title {
   text-align: center;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: bold;
   margin: 40px 0;
-  color: #666
+  color: rgb(87, 80, 80)
 }
 
 #services .stat {
