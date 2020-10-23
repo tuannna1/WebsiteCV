@@ -48,24 +48,20 @@
 
             <a href="#">Thông báo <i class="far fa-bell"></i></a>
 
-            <div class="btn-group ps-dropdown" style="z-index: 9999999999">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                data-toggle="dropdown"
-                aria-haspopup="false"
-                aria-expanded="true"
-                >Ngôn ngữ <i class="fas fa-globe-americas"></i>
-                <ul class="dropdown-menu">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Japanese</a></li>
-                  <li><a href="#">Chinese</a></li>
-                </ul>
-              </a>
+
+            <a class="dropdown" href="">
+              <a class="dropbtn"
+                >Ngôn ngữ <i class="glyphicon glyphicon-globe"></i
+              ></a>
+              <div class="dropdown-content">
+                <a routerLink="/login">Vietnamese</a>
+                <a routerLink="/register">English</a>
+              </div>
+            </a>
               <a (click)="logout()" *ngIf="authService.user | async" href="#"
                 >Đăng xuất <i class="fas fa-sign-out-alt"></i
               ></a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -116,7 +112,7 @@
           <h1 style="font-size: 280%; font-weight: bold">
             WEBSITE CHO ỨNG VIÊN CHUYÊN NGHIỆP
           </h1>
-          <h4 style="margin-bottom: 50px">
+          <h4 style="margin-bottom: 50px; font-size: 20px;">
             TRANG WEB TÌM KIẾM VIỆC LÀM NỔI BẬT VÀ HOT NHẤT TẠI QT-HR
           </h4>
 
