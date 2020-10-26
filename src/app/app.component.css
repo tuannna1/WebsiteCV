@@ -81,6 +81,7 @@ no-repeat center center;
 border-radius: 100%;
 border: 2px solid transparent;
 opacity: 0.7;
+transition: 0.3s;
 -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
 -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
 -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
@@ -104,10 +105,17 @@ opacity: 0.5;
 background-color: rgba(117, 235, 80, 0.5);
 opacity: 0.75 !important;
 }
+
 .coccoc-alo-phone.coccoc-alo-green.coccoc-alo-hover .coccoc-alo-ph-img-circle,
 .coccoc-alo-phone.coccoc-alo-green:hover .coccoc-alo-ph-img-circle {
 background-color: #75eb50;
+transition: 0.3s;
+width: 55px;
+height: 55px;
+margin-left: -8px;
+margin-top: -8px;
 }
+
 @-moz-keyframes coccoc-alo-circle-anim {
 0% {
 transform: rotate(0) scale(0.5) skew(1deg);
@@ -321,9 +329,12 @@ transform: rotate(0) scale(1) skew(1deg);
   bottom: 20px;
   right: 1.5%;
   z-index: 100;
+  transition: 0.6s;
+  margin-right: 10px;
 }
 #back-top img:hover {
   moz-box-shadow: -2px 2px 25px #53298E;
   webkit-box-shadow: -2px 2px 25px #53298E;
   box-shadow: -2px 2px 25px #53298E;
+  transition: 0.4s;
 }

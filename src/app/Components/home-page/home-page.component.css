@@ -8,3 +8,7 @@ a{
   color: yellow;
   transition: 0.2s;
 }
+
+.resume a:hover{
+  color: red;
+}
